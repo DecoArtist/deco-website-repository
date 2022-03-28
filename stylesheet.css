@@ -1,0 +1,458 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: "Dfont";
+	src: url("fonts/DFbase.otf") format("truetype");
+	font-weight: 150%;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "DecoF";
+	src: url("fonts/deco_font.ttf") format("truetype");
+}
+
+@keyframes Asbrtext{
+    0%   {transform: scale(0.2) translateX(-9%);}
+    50%  {transform: scale(1.1) translateX(3%);}
+    100% {transform: scale(1.0);}
+}
+
+header > .heud
+{
+    justify-content: center;
+    height: 100px;
+	background-image: linear-gradient(rgb(20, 20, 30), rgb(65, 75, 95));
+    text-align: center;
+}
+
+header > .heud > div > svg
+{
+    z-index: 1;
+    width: 150px;
+    position: relative;
+    top: 35%;
+}
+.heaerh{
+    display: flex;
+    justify-content: left;
+    z-index: 1;
+    position: relative;
+    top: -17.5%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+}
+
+h1#title {
+    margin-left: 10px;
+}
+
+/* background */
+
+body
+{
+    padding: 0px;
+    margin: 0px;
+    display: initial;
+	background: #19192d url(imgs/background.nocolor.png) repeat 0 0;
+	animation: backgroundAN 18s linear infinite;
+}
+
+@keyframes backgroundAN{
+	0%   {background-position: 0 0,0 0;}
+	100% {background-position: -385px -385px;}
+}
+
+/* .background
+{
+	position: absolute;
+	height: 110%;
+	z-index: 0;
+} */
+
+#fullfooterposition
+{
+    position: relative;
+	z-index: 2,
+}
+
+#fullfooterpositionC
+{
+    position: relative;
+	margin-top: 15px;
+	z-index: 2,
+}
+
+#fullfooterpositionA
+{
+    position: relative;
+	z-index: 2,
+}
+
+section {
+  width: 100%;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0);
+  height: 50vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.footer-distributed{
+	background-image: linear-gradient(rgb(65, 75, 95), rgb(20, 20, 30));
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: 16px sans-serif;
+	padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font-size: 36px;
+	font-family: "DFbase";
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  rgb(255, 255, 255);
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+    font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #222;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+    font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  rgb(15, 170, 230);
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: none;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+.fa_fa-envelope
+{
+    color: rgb(0, 60, 255);
+}
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+/*-----HOVER-----*/
+.home{
+    transition: 0.3s;
+    color: #ffffff;
+}
+.home:hover{
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+
+
+.SZ{
+    transition: 0.3s;
+    color: #ffffff;
+}
+.SZ:hover{
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+
+
+.about{
+    transition: 0.3s;
+    color: #ffffff;
+}
+.about:hover{
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+
+.contact{
+    transition: 0.3s;
+    color: #ffffff;
+}
+.contact:hover{
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+/* social medias */
+
+.sociais{
+    margin-top: 20px;
+    border-radius: 12px;
+    padding: 15px;
+	height: 45px;
+    display: flex;
+    background-color: rgb(10, 10, 20);
+    justify-content: center;
+}
+
+.aninInstSVG{
+    width: 50px;
+    transition: 0.3s;
+    fill: #ffffff;
+	margin-left: -10px;
+}
+.aninInstSVG:hover{
+    transform: scale(0.9);
+    cursor: pointer;
+    fill: #e02460;  
+}
+
+.aninTwSVG svg{
+    width: 50px;
+    transition: 0.3s;
+    fill: #ffffff;
+}
+.aninTwSVG svg:hover{
+    transform: scale(0.9);
+    cursor: pointer;
+    fill: #00a2ff; 
+}
+
+.aninYtSVG svg{
+    width: 50px;
+    transition: 0.3s;
+    fill: #ffffff;
+}
+.aninYtSVG svg:hover{
+    transform: scale(0.9);
+    cursor: pointer;
+    fill: #ff0000; 
+}
+
+.aninGJSVG svg{
+    width: 50px;
+    transition: 0.3s;
+    fill: #ffffff;
+}
+.aninGJSVG svg:hover{
+    transform: scale(0.9);
+    cursor: pointer;
+    fill: #cbfe03; 
+}
+
+.aninRDSVG svg{
+    width: 45px;
+	margin-bottom: 15px;
+	margin-right: 5px;
+    transition: 0.3s;
+    fill: #ffffff;
+}
+.aninRDSVG svg:hover{
+    transform: scale(0.9);
+    cursor: pointer;
+    fill: #ff4500; 
+}
+
+::-webkit-scrollbar {
+    width: 8.8px;
+    height: 8.8px;
+	transition: 0.3s;
+    background-color: #44414b;
+}
+
+::-webkit-scrollbar:hover {
+    width: 8.8px;
+    height: 8.8px;
+    background-color: #3e3b44;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #a29bb3;
+    border-radius: 6px;
+    border: solid 1.8px;
+	border-color: #000000;
+	transition: 0.3s;
+    border-bottom-width: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #877e9b;
+	/* #febd23 */
+    border-radius: 6px;
+    border: solid 1.8px;
+	border-color: #000000;
+    border-bottom-width: 3px;
+}
+
+.imgs_{
+	flex-wrap: wrap;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.tweetart
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.mainbuttonsDIV2
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin-bottom: 15px;
+}
