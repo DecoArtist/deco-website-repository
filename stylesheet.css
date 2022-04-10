@@ -56,12 +56,12 @@ body
     margin: 0px;
     display: initial;
 	background: #19192d url(imgs/background.nocolor.png) repeat 0 0;
-	animation: backgroundAN 18s linear infinite;
+	-webkit-animation: slide 18s linear infinite;
 }
 
-@keyframes backgroundAN{
-	0%   {background-position: 0 0,0 0;}
-	100% {background-position: -385px -385px;}
+@-webkit-keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: -100% -91%; }
 }
 
 /* .background
@@ -73,20 +73,21 @@ body
 
 #fullfooterposition
 {
+    position: absolute;
+	top: 65%;
+	z-index: 2,
+}
+
+#fullfooterpositionB
+{
     position: relative;
 	z-index: 2,
 }
 
 #fullfooterpositionC
 {
-    position: relative;
-	margin-top: 15px;
-	z-index: 2,
-}
-
-#fullfooterpositionA
-{
-    position: relative;
+    position: absolute;
+	top: 59.5%;
 	z-index: 2,
 }
 
@@ -455,4 +456,9 @@ section {
 	justify-content: center;
 	text-align: center;
 	margin-bottom: 15px;
+}
+
+.petdeco
+{
+	margin-bottom: 5px;
 }
