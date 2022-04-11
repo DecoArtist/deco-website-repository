@@ -55,13 +55,13 @@ body
     padding: 0px;
     margin: 0px;
     display: initial;
-	background: #19192d url(imgs/background.nocolor.png) repeat 0 0;
-	-webkit-animation: slide 18s linear infinite;
+    background: #19192d url(imgs/background.nocolor.png) repeat 0 0;
+    -webkit-animation: slide 8s linear infinite;
 }
 
 @-webkit-keyframes slide {
     from { background-position: 0 0; }
-    to { background-position: -100% -91%; }
+    to { background-position: -304px -300px; }
 }
 
 /* .background
