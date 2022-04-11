@@ -7,7 +7,7 @@
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <link rel="shortcut icon" href="favicon/favicon.png" type="svg/x-icon">
     <link rel="stylesheet" href="stylesheet.css">
-    <meta id="meta-image" name="og:image" content="https://deco-website.netlify.app/imgs/petpet.gif" itemprop="image">
+	<meta id="meta-image" name="og:image" content="https://deco-website.netlify.app/imgs/petpet.gif" itemprop="image">
     <meta name="description" content="Deco's portfolio/website.">
     <title>Deco website</title>
 <head>
@@ -50,6 +50,21 @@
 	cursor: pointer;
 }
 
+.mainbuttonsEN:active
+{
+	font-size: 14px;
+	font-family: 'arial';
+	font-weight: bold;
+	border-radius: 8px;
+	background-color: #ececec;
+	padding: 18px 34px;
+	padding-top: 18px;
+	padding-right: 34px;
+	padding-bottom: 18px;
+	z-index: 2;
+	cursor: pointer;
+}
+
 .mainbuttonsDIV
 {
 	display: flex;
@@ -80,6 +95,24 @@
     z-index: -1;
 	}
 
+	@media (max-width: 470px)
+	{
+		.Dimg img
+		{
+			opacity: 0;
+			width: 0px;
+		}
+	}
+
+	@media (min-height: 870px)
+	{
+		.Dimg img
+		{
+			opacity: 0;
+			width: 0px;
+		}
+	}
+
 	/* .null img
 	{
 		width: 100%; 
@@ -91,7 +124,6 @@
 	</style>
 	<div class="Dimg">
 		<picture>
-			<source class="Dimg" srcset="imgs/null.png" media="(max-width: 470px)" alt=" ">
 			<img class="Dimg" src="imgs/Deco.png" alt="Deco">
 		</picture>
 	</div>

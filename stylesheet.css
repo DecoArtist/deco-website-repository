@@ -55,8 +55,8 @@ body
     padding: 0px;
     margin: 0px;
     display: initial;
-    background: #19192d url(imgs/background.nocolor.png) repeat 0 0;
-    -webkit-animation: slide 8s linear infinite;
+	background: #19192d url(imgs/background.nocolor.png) repeat 0 0;
+	-webkit-animation: slide 8s linear infinite;
 }
 
 @-webkit-keyframes slide {
@@ -78,6 +78,14 @@ body
 	z-index: 2,
 }
 
+@media (max-height: 571px) 
+{
+	#fullfooterposition
+	{
+		top: 400px;
+	}
+}
+
 #fullfooterpositionB
 {
     position: relative;
@@ -89,6 +97,14 @@ body
     position: absolute;
 	top: 59.5%;
 	z-index: 2,
+}
+
+@media (max-height: 624px) 
+{
+	#fullfooterpositionC
+	{
+		top: 400px;
+	}
 }
 
 section {
@@ -339,6 +355,42 @@ section {
     display: flex;
     background-color: rgb(10, 10, 20);
     justify-content: center;
+	width: fit-content;
+    margin-left: -00px;
+}
+
+@media (max-width: 1211px)
+{
+	.sociais
+	{
+		margin-left: -50px;
+	}
+}
+
+@media (max-width: 1020px)
+{
+	.sociais
+	{
+		margin-left: -65px;
+	}
+}
+
+@media (max-width: 956px)
+{
+	.sociais
+	{
+		margin-left: -85px;
+	}
+}
+
+@media (max-width: 880px)
+{
+	.sociais{
+		width: auto;
+		margin-left: 0px;
+		margin-bottom: 40px;
+		text-align: center;
+	}
 }
 
 .aninInstSVG{
@@ -386,6 +438,15 @@ section {
     fill: #cbfe03; 
 }
 
+@media (max-width: 307px)
+{
+	.aninGJSVG svg
+	{
+		opacity: 0;
+		width: 0px;
+	}
+}
+
 .aninRDSVG svg{
     width: 45px;
 	margin-bottom: 15px;
@@ -397,6 +458,15 @@ section {
     transform: scale(0.9);
     cursor: pointer;
     fill: #ff4500; 
+}
+
+@media (max-width: 254px)
+{
+	.aninRDSVG svg
+	{
+		opacity: 0;
+		width: 0px;
+	}
 }
 
 ::-webkit-scrollbar {
