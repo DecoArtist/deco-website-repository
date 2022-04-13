@@ -531,3 +531,16 @@ section {
 {
 	margin-bottom: 5px;
 }
+
+#Dtext
+{
+	font-family: "DecoF";
+    font-size: 55px;
+    position: relative;
+    text-decoration: none;
+    left: 10px;
+    color: white;
+    z-index: 3;
+    transition: 0.3s;
+    margin-left: -10px;
+}
